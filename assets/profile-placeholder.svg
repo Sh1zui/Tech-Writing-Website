@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-labelledby="t">
+  <title id="t">Photo placeholder: a simple head-and-shoulders silhouette</title>
+  <rect width="300" height="300" fill="#ece4d1"/>
+  <circle cx="150" cy="115" r="52" fill="#c9bea4"/>
+  <path d="M46 300c0-62 46-104 104-104s104 42 104 104z" fill="#c9bea4"/>
+  <text x="150" y="278" text-anchor="middle" font-family="sans-serif" font-size="15" fill="#454d5e">Add your photo in js/config.js</text>
+</svg>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Info — TechWrite</title>
+<meta name="description" content="Contact the author of the TechWrite website.">
+<meta name="theme-color" content="#a63d2a">
+<link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,600&family=IBM+Plex+Mono:wght@400;500;600&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body id="top" class="">
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="TechWrite home">
+      <img src="assets/logo.svg" alt="" width="42" height="42">
+      <span class="brand-text"><span class="brand-name">TechWrite</span><span class="brand-sub">ENG 2 · Technical Writing</span></span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu"><span></span></button>
+    <nav class="nav" id="site-nav" aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="lectures.html">Lectures</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html" aria-current="page">Contact Info</a></li></ul></nav>
+  </div>
+</header>
+<main id="main">
+
+<div class="page-head">
+  <div class="container">
+    <span class="eyebrow">Contact Info</span>
+    <h1>Get in touch</h1>
+    <p class="lede">Questions about the lectures, or feedback on this website? Send a message using the form.</p>
+  </div>
+</div>
+<div class="container form-layout">
+  <section aria-labelledby="h-info">
+    <h2 id="h-info">Contact details</h2>
+    <ul class="info-list">
+      <li><b>Email</b><span><a data-fill-mailto href="#"><span data-fill="email" class="ph">[your.email@example.com]</span></a></span></li>
+      <li><b>Name</b><span data-fill="studentName" class="ph">[Your Full Name]</span></li>
+      <li><b>School</b><span data-fill="institution">City College of Calapan</span></li>
+      <li><b>Subject</b><span data-fill="subject">ENG 2 — Technical Writing</span></li>
+    </ul>
+    <div class="callout key">
+      <span class="label">How the form works</span>
+      <p>This website has no mail server. After you submit the form, your email app opens with the message already written, or you can copy it. Nothing is stored on this site.</p>
+    </div>
+  </section>
+
+  <section class="form-card" aria-labelledby="h-form">
+    <h2 id="h-form" style="font-size:1.5rem">Send a message</h2>
+    <form id="contact-form" novalidate>
+      <div class="field">
+        <label for="name">Your name <span class="req" aria-hidden="true">*</span></label>
+        <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="err-name">
+        <p class="err" id="err-name" role="alert"></p>
+      </div>
+      <div class="field">
+        <label for="email">Your email <span class="req" aria-hidden="true">*</span></label>
+        <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="err-email">
+        <p class="err" id="err-email" role="alert"></p>
+      </div>
+      <div class="field">
+        <label for="subject">Subject <span class="req" aria-hidden="true">*</span></label>
+        <select id="subject" name="subject" required aria-describedby="err-subject">
+          <option value="">Choose a subject…</option>
+          <option>Question about a lecture</option>
+          <option>Feedback on the website</option>
+          <option>Report an error</option>
+          <option>Other</option>
+        </select>
+        <p class="err" id="err-subject" role="alert"></p>
+      </div>
+      <div class="field">
+        <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
+        <textarea id="message" name="message" required aria-describedby="err-message hint-message"></textarea>
+        <div class="counter" id="msg-count" aria-hidden="true">0 / 800</div>
+        <p class="hint" id="hint-message">20 to 800 characters.</p>
+        <p class="err" id="err-message" role="alert"></p>
+      </div>
+      <div class="honey" aria-hidden="true"><label for="website">Leave this field empty</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
+      <button class="btn btn-primary" type="submit">Send message</button>
+    </form>
+    <div id="form-status" class="form-status" role="status" tabindex="-1"></div>
+  </section>
+</div>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>TechWrite</h2>
+        <p>A study website on technical writing, made for the ENG 2 Final Examination: <em>Making a Website</em>.</p>
+        <p><span data-fill="institution">City College of Calapan</span></p>
+      </div>
+      <div>
+        <h2>Pages</h2>
+        <ul><li><a href="index.html">Home</a></li><li><a href="lectures.html">Lectures</a></li><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Info</a></li></ul>
+      </div>
+      <div>
+        <h2>Lectures</h2>
+        <ul>
+          <li><a href="lectures.html#lecture-1">1 · Definition and Purpose</a></li>
+          <li><a href="lectures.html#lecture-2">2 · ABCs</a></li>
+          <li><a href="lectures.html#lecture-3">3 · Outlining the Subject</a></li>
+          <li><a href="lectures.html#lecture-4">4 · Types of Technical Paper</a></li>
+          <li><a href="lectures.html#lecture-5">5 · Basic English Structure</a></li>
+          <li><a href="lectures.html#lecture-6">6 · Parts of a Letter</a></li>
+          <li><a href="lectures.html#lecture-7">7 · Graphs and Charts</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="fine">© <span id="year">2026</span> <span data-fill="studentName" class="ph">[Your Full Name]</span> · ENG 2 Final Examination · Lecture content adapted from class materials.</p>
+  </div>
+</footer>
+<button class="to-top" type="button" aria-label="Back to top">↑</button>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
